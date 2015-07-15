@@ -12,8 +12,7 @@ RUN apt-get update \
         php5-mysql \
         php5-cli \
         php5-cgi \
-        openjdk-7-jre-headless \
-        openjdk-7-jdk="$JAVA_DEBIAN_VERSION" \
+        openjdk-7-jre \
         openssh-client \
         python-openssl \
         && apt-get clean \
