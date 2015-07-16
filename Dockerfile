@@ -7,6 +7,7 @@ ENV JAVA_DEBIAN_VERSION 7u79-2.5.5-1~deb8u1
 RUN apt-get update \
         && apt-get install -y -qq --no-install-recommends \ 
         wget \
+        curl \
         unzip \
         python \
         php5-mysql \
