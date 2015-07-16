@@ -43,7 +43,7 @@ ENV GOOGLE_APPLICATION_CREDENTIALS=/hbase/conf/key.json
 WORKDIR /
 
 RUN mkdir hbase 
-RUN wget http://storage.googleapis.com/cloud-bigtable/hbase-dist/hbase-1.0.1/hbase-1.0.1-bin.tar.gz && tar hbase-1.0.1-bin.tar.gz -zxC hbase --strip-components=1
+RUN wget http://storage.googleapis.com/cloud-bigtable/hbase-dist/hbase-1.0.1/hbase-1.0.1-bin.tar.gz && tar -zxC hbase-1.0.1-bin.tar.gz hbase --strip-components=1
 
 RUN mkdir -p hbase/lib/bigtable
 RUN wget -0 https://storage.googleapis.com/cloud-bigtable/jars/bigtable-hbase/bigtable-hbase-1.0-0.1.9-shaded.jar  \
